@@ -7,6 +7,8 @@ MovieMatcher is a platform that helps friends easily decide what movies to watch
 
 This high-fidelity prototype was built using React for the frontend, with careful attention to usability, accessibility, and collaborative version control through GitHub.
 
+-------------------------------------------------------------------------------------------
+
 Please Find the `index.html` file at the following subdirectory.
 
 ### `/build/index.html`.
