@@ -1,7 +1,11 @@
-# Project Description:
+# Human Computer Interfaces Group Project:
 
+# Title: MovieMatcher
+September 2024 - December 2025
 
+MovieMatcher is a platform that helps friends easily decide what movies to watch together. Inspired by apps like Instagram and Tinder, MovieMatcher focuses on simple, interactive voting and sharing of movie preferences within groups. 
 
+This high-fidelity prototype was built using React for the frontend, with careful attention to usability, accessibility, and collaborative version control through GitHub.
 
 Please Find the `index.html` file at the following subdirectory.
 
