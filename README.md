@@ -1,4 +1,4 @@
-# Human Computer Interfaces Group Project:
+# Human Computer Interfaces - Group Project
 
 # Title: MovieMatcher
 September 2024 - December 2025
