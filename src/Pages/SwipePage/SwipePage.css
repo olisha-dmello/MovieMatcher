@@ -1,0 +1,268 @@
+/* General Swipe Area Styles */
+.swipe_area {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .swipe_area {
+        transform: translateY(-50px);
+    }
+}
+
+.pageWrapper {
+    max-width: 100vw;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.header {
+    padding-bottom: 0px;
+}
+
+/* Background Container Styles */
+.swipe_area_bkg_container {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+/* Background Container Styles */
+.swipe_area_bkg_container {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    max-width: 100vw;
+    max-height: 100vh;
+
+    user-select: none;
+    pointer-events: none;
+}
+
+/* Background Tint */
+.swipe_area_flat_bkg {
+    content: '';
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    max-width: 100vw;
+    max-height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    z-index: -100;
+    transition: 0.3s;
+}
+
+/* Blurred Background */
+.swipe_area_bkg {
+    content: '';
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    max-width: 100vw;
+    max-height: 100vh;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    filter: blur(32px);
+    opacity: 70%;
+    transition: 1.5s;
+    z-index: -1;
+}
+
+
+/* Swipe Icons */
+.swipe_bkg_icons {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 100px;
+    font-size: 50px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.swipe_bkg_icons_active {
+    opacity: 0.8;
+    gap: 160px;
+    font-size: 50px;
+    transition: 0.3s;
+}
+
+.swipe-icon {
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+
+
+.group-swipe-selector-subpage {
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.group-selector-in-swipe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.group-selector-in-swipe:hover {
+    padding:12px;
+    cursor:pointer;
+}
+
+.group-swipe-choose {
+
+    width: 80%;
+    max-width: 600px;
+
+    align-content: center;
+    /* border: 1px solid red; */
+    cursor: pointer;
+}
+
+.group-swipe-item {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .swipe_bkg_icons {
+        position: absolute;
+        z-index: 20;
+        justify-content: space-between;
+        user-select: none;
+        pointer-events: none;
+    }
+
+    .swipe_bkg_icons_active {
+        z-index: 20;
+        gap: 160px;
+        padding: 40px;
+        opacity: 1;
+    }
+    
+    .swipe-icon {
+        background-color: white;
+        color: black;
+        padding: 5px;
+        border-radius: 100%;
+    }
+
+    .group-selector-in-swipe {
+        top: 50px;
+        left: 0;
+    }
+}
+
+/* Message Styles */
+.swipe_area_message {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: top;
+    flex-direction: column;
+    user-select: none;
+    pointer-events: none;
+    transition: 0.3s;
+    z-index: 100;
+}
+
+.swipe_area_paper {
+    font-size: 20px;
+    margin-top: 50px;
+    padding: 1rem 0.5rem;
+    border-radius: 30px;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.swipe_area_paper.active {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+/* Group Selector */
+.group-swipe-selector {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.group-swipe-group-holder {
+    width: 80%;
+    max-width: 600px;
+    align-content: center;
+    /* border: 1px solid red; */
+    cursor: pointer;
+}
+
+.group-swipe-group-name-div {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    padding: 10px;
+}
+
+.groups-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.group-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+}
+
+.group-item:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.group-avatar {
+    margin-right: 10px;
+}
+
+.group-name {
+    font-size: 16px;
+    font-weight: bold;
+}

@@ -1,0 +1,51 @@
+.card {
+    width: 250px; /* Adjust width as needed */
+    margin: 1rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.poster-container {
+    width: 100%;
+    height: 375px; /* Adjust height as needed to fit vertical images */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e0e0e0;
+}
+
+.poster {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1rem;
+    text-align: left;
+}
+
+.genres {
+    margin-top: 0.5rem;
+}
+
+.genre-tag {
+    display: inline-block;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    padding: 0.25rem 0.5rem;
+    margin-right: 0.5rem;
+    font-size: 0.8rem;
+    color: #333;
+}
+
+.description {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #555;
+}

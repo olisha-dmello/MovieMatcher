@@ -1,0 +1,115 @@
+
+.swipe_card_card {
+    max-width: 600px;
+    position: absolute;
+    user-select: none;
+    /* box-shadow: 10px 10px 15px rgba(255, 0, 0, 0.767); */
+}
+
+.card-poster {
+    user-select: none;
+    pointer-events: none;
+
+    height: 400px;
+}
+
+.title-row {
+    max-width: 400px;
+    display: flex;
+    gap: 1rem;
+}
+
+.chip-row {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.movie-year {
+    font-size: 1.8rem;
+    font-weight: lighter;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 350px;
+}
+
+.card-actions {
+    /* border: 1px solid red; */
+    bottom: 0;
+    position: relative;
+    float: bottom;
+}
+
+
+/* 520 is where around the card gets too big */
+@media only screen and (max-width: 520px) {
+
+    .swipe_card_card {
+        position: absolute;
+        user-select: none;
+    }
+    
+    .card-poster {
+        user-select: none;
+        pointer-events: none;
+    
+        height: 300px;
+    }
+    
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    .movie-year {
+        font-size: 1.5rem;
+    }
+
+    .title-row {
+        width: 75%;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+}
+
+/* Remove Less Important Info on Shorter Screens */
+@media only screen and (max-height: 750px) {
+
+    .short-hide {
+        display: none
+    }
+}
+
+@media only screen and (max-height: 700px) {
+
+    .title {
+        font-size: 1rem;
+    }
+    .movie-year {
+        font-size: 1rem;
+    }
+
+    .card-poster {
+        user-select: none;
+        pointer-events: none;
+    
+        height: 150px;
+    }
+
+    .card-body {
+        height: 300px;
+    }
+
+}

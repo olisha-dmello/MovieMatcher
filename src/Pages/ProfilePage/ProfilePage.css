@@ -1,0 +1,79 @@
+.profile-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.profile-avatar {
+    width: 100px;
+    height: 100px;
+    margin-right: 1.5rem;
+}
+
+.profile-info {
+    flex-grow: 1;
+}
+
+.section {
+    margin-bottom: 2rem;
+    overflow: visible;
+}
+
+.genre-preferences {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.genre-chip {
+    margin: 0.25rem;
+}
+
+/* Horizontal scrolling list for movies and shows */
+.movie-list,
+.tvshow-list {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    padding: 15px;
+}
+
+.movie-list::-webkit-scrollbar,
+.tvshow-list::-webkit-scrollbar {
+    height: 8px;
+    /* Adjust scrollbar height */
+}
+
+.movie-list::-webkit-scrollbar-thumb,
+.tvshow-list::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+
+@media only screen and (max-width: 550px) {
+
+    .movie-list,
+    .tvshow-list {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        gap: 1rem;
+        padding-bottom: 1rem;
+        padding: 15px;
+    }
+
+}
+
+.empty-media-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}

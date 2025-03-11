@@ -1,0 +1,40 @@
+
+.pageWrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.pageContent {
+    padding: 16px;
+    flex: 1;
+    overflow-y: scroll;
+}
+
+.header {
+    padding-bottom: 10px;
+    z-index: 100;
+}
+
+@media (max-width: 768px) {
+    /* Mobile Styles */
+    .header {
+      order: 2; /* Move header to bottom on mobile */
+      padding-bottom: 0px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    
+    .pageContent {
+      padding-bottom: 80px; /* Space for the footer at the bottom */
+    }
+}
+
+@media only screen and (max-width: 450px) {
+  .pageContent {
+    padding: 0;
+    padding-bottom: 80px; /* Space for the footer at the bottom */
+  }
+}

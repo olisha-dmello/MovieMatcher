@@ -1,0 +1,174 @@
+/* GroupProfilePage.css */
+.group-profile-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.group-header {
+    display: flex;
+    position: relative;
+    align-items: end;
+    margin-bottom: 2rem;
+}
+
+.group-avatar {
+    width: 100px;
+    height: 100px;
+    margin-right: 1.5rem;
+}
+
+.group-info {
+    flex-grow: 1;
+    /* border: 1px solid red; */
+}
+
+.section {
+    margin-bottom: 2rem;
+}
+
+.members-section {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2px;
+    /* border: 1px solid red; */
+
+    height: 100%;
+    width: 20%;
+
+    gap: 0px;
+}
+
+.member-scroll-section {
+    max-height: 350px;
+    overflow-y: scroll;
+}
+
+.member-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 1rem;
+}
+
+.member-name-combo {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.member-nav {
+    cursor: pointer;
+}
+
+.profile-avatar-stacked {
+    margin-left: -22px;
+    margin-right: 0px;
+}
+
+.media-list,
+.liked-media-list {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.empty-media-list{
+    display: flex;
+    width: 100%;
+    height: 200px;
+    margin: 1rem;
+
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.liked-media-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    position: relative
+}
+
+.vote-button-section {
+    text-align: center; /* Centers the button horizontally */
+    margin-top: 20px;
+}
+
+.vote-button {
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 1.5rem !important;
+    padding: 1rem 3rem !important;
+    background-color: #AFB1FFFF !important; /* Custom color */
+    color: #ffffff !important; /* Text color */
+    border-radius: 20px !important; /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5) !important; /* Subtle shadow effect */
+    transition: background-color 0.3s, transform 0.3s !important; /* Smooth transition for hover */
+    width: auto !important;
+}
+
+.vote-button:hover {
+    background-color: #07175c !important; /* Darker shade on hover */
+    transform: scale(1.05) !important; /* Slight scale-up on hover */
+}
+
+.vote-icon {
+    font-size: 2rem !important;
+    margin-right: 12px !important;
+}
+
+
+
+
+
+/* Customize scrollbar for media lists */
+.media-list::-webkit-scrollbar,
+.liked-media-list::-webkit-scrollbar {
+    height: 8px;
+}
+
+.member-scroll-section::-webkit-scrollbar {
+    width: 8px;
+    margin-left: 2px;
+}
+
+.media-list::-webkit-scrollbar-thumb,
+.member-scroll-section::-webkit-scrollbar-thumb,
+.liked-media-list::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+
+.liked-avatars {
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+.remove-group-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .members-section {
+        display: none
+    }
+}
+
+@media only screen and (max-width: 350px) {
+
+    .group-header {
+        display: block;
+    }
+
+}
